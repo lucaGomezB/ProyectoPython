@@ -1,5 +1,5 @@
-import clases
-#Acá se importa clases.py
+import Clases
+#Acá se importa Clases.py
 
 #*** A  C O N T I N U A C I O N  S E  C R E A N  L O S  M É T O D O S  D E  ejecutable.py  ***
 
@@ -30,6 +30,8 @@ def mostrarMatriz(matrizADN):
         print()
 
 def Menu(matrizADN):
+    isMutante = False
+    detector = Clases.Detector(matrizADN, isMutante)
     #Este método interactua con clases.py para modificar la matriz o mostrarla de vuelta
     while True:
         print()
@@ -45,13 +47,13 @@ def Menu(matrizADN):
         opcion = int(input("Seleccione una opción : "))
         print()
         if opcion == 1:
-            matrizADN
+           isMutante = detector.detectar_Mutantes(matrizADN,isMutante)
         elif opcion == 2:
             matrizADN
         elif opcion == 3:
             matrizADN
         elif opcion == 4:
-            matrizADN
+            mostrarMatriz(matrizADN)
         elif opcion == 5:
             print("Gracias por usar nuestro programa.")
             print()
