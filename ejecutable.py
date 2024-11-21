@@ -47,7 +47,7 @@ def Menu(matrizADN):
         opcion = int(input("Seleccione una opción : "))
         print()
         if opcion == 1:
-           isMutante = detector.detectar_Mutantes(matrizADN,isMutante)
+           isMutante = detector.Detectar_mutantes(matrizADN,isMutante)
         elif opcion == 2:
             matrizADN
         elif opcion == 3:
