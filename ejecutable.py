@@ -70,8 +70,6 @@ def Menu(matrizADN):
         elif opcion == "5":
             mostrarMatriz(matrizADN)
             print()
-            print("Gracias por usar nuestro programa.")
-            print()
             print("Crédito : ")
             print("Luca Gómez")
             break

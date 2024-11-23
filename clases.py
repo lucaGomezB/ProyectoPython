@@ -134,9 +134,6 @@ class Sanador:
                                     cadena = cadena[0]+"CGTA"+cadena[5]
                             contador += 1
                             matrizADN[j] = cadena
-                        print(matrizADN[j])
-                    print(matrizADN)
-                    input()
                 if detectarMutanteVertical(matrizADN):
                     for i in range(3):
                         for j in range(6):
